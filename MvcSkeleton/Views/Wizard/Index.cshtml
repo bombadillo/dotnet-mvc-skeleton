@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MvcSkeleton.Models.Wizard>
+@{
+    ViewBag.Title = "Wizard";
+}
+
+
+<ul class="list-group">
+    @foreach (var wizard in Model)
+    {
+        <li class="list-group-item">@wizard.Name</li>
+    }
+</ul>
